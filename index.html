@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Send it</title>
+    <script
+      src="https://cdn.jsdelivr.net/gh/Senditmedia/senditcdn_cast@latest/assets/js/senditPlayer2.js"
+      defer
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/Senditmedia/senditcsenditcdn_castdn@latest/assets/css/sendit.css"
+    />
+    <link
+      href="//fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic-ext,greek-ext,latin-ext"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+  <body>
+    <div class="main_video" id="main_video">
+      <div class="imageSub" id="imageSub">
+        <!-- Put Your Image Width -->
+        <video id="senditVideo"></video>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/gh/Senditmedia/senditcdn_cast@latest/assets/js/senditPlayer.js"
+      defer
+    ></script>
+    <script src="https://cdn.jsdelivr.net/gh/Senditmedia/senditcdn_cast@latest/assets/js/cast.js"></script>
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1"
+    ></script>
+
+    <script type="text/javascript">
+      var castPlayer = new CastPlayer();
+      window["__onGCastApiAvailable"] = function (isAvailable) {
+        if (isAvailable) {
+          castPlayer.initializeCastPlayer();
+        }
+      };
+    </script>
+  </body>
+</html>
