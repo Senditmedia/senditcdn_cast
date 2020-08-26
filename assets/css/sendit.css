@@ -139,6 +139,19 @@ body {
   /* height: 540px; */
   background-color: #000;
 }
+
+#nativeHLS {
+  /* margin-left: 40px;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 0; */
+  width: 100%;
+  /* width: 960px; */
+  height: 100%;
+  /* height: 540px; */
+  background-color: #000;
+}
+
 #media_info {
   display: block;
   clear: both;
